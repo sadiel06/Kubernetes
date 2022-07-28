@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  pod1:
+    build: ./Nodejs1
+    ports:
+      - "3000:3000"
+    image: pod1:latest
+  pod2:
+    build: ./Nodejs2
+    ports:
+      - "3001:3001"
+    image: pod2:latest
